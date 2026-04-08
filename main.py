@@ -7,8 +7,6 @@ def read_root():
     return {"mensagem": "API funcionando!"}
 
 @app.get("/somar/{a}/{b}")
-
-@app.get("/somar/{a}/{b}")
 def somar(a: int, b: int):
-# ERRO INTENCIONAL AQUI: altere de + para -
-return {"resultado": a - b}
+    # Apenas retorna a soma dos dois números
+    return {"resultado": a + b}
